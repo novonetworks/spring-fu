@@ -41,7 +41,7 @@ allprojects {
 					)
 
 				} else {
-					url = uri("$buildDir/repo")
+					url = uri("$rootDir/maven-repo")
 				}
 			}
 		}
