@@ -1,0 +1,152 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.springframework.fu",
+    "module": "spring-fu-jafu",
+    "version": "0.5.0-patch-context",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.5.1",
+      "buildId": "6xrg6s5gfzda7f2c7kft2fd4fa"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot",
+          "version": {
+            "requires": "2.4.0"
+          },
+          "excludes": [
+            {
+              "group": "net.objecthunter",
+              "module": "exp4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "jcl-over-slf4j"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-log"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-manifests"
+            },
+            {
+              "group": "commons-logging",
+              "module": "commons-logging"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-fu-jafu-0.5.0-patch-context.jar",
+          "url": "spring-fu-jafu-0.5.0-patch-context.jar",
+          "size": 63361,
+          "sha512": "5b289b0acb4b0757c37fc389839ef9ab39e346556d58b2413378b88e20a7844eedc435c1aaa5c5ae4e30431731d3a0f22fa1dd346ba7d3e33a208b3cc91c0518",
+          "sha256": "b604c44970af6a0571a299ed338a4339ddee1a835affc2131cc4141e0df30f6c",
+          "sha1": "5ab86ca9e041bcfe895f366db7176b65ad64eeef",
+          "md5": "3a800d079d48d94160d0b9786b7ce1e0"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.fu",
+          "module": "spring-fu-autoconfigure-adapter",
+          "version": {
+            "requires": "0.5.0-patch-context"
+          },
+          "excludes": [
+            {
+              "group": "net.objecthunter",
+              "module": "exp4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "jcl-over-slf4j"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-log"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-manifests"
+            },
+            {
+              "group": "commons-logging",
+              "module": "commons-logging"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot",
+          "version": {
+            "requires": "2.4.0"
+          },
+          "excludes": [
+            {
+              "group": "net.objecthunter",
+              "module": "exp4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "jcl-over-slf4j"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-log"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-manifests"
+            },
+            {
+              "group": "commons-logging",
+              "module": "commons-logging"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-fu-jafu-0.5.0-patch-context.jar",
+          "url": "spring-fu-jafu-0.5.0-patch-context.jar",
+          "size": 63361,
+          "sha512": "5b289b0acb4b0757c37fc389839ef9ab39e346556d58b2413378b88e20a7844eedc435c1aaa5c5ae4e30431731d3a0f22fa1dd346ba7d3e33a208b3cc91c0518",
+          "sha256": "b604c44970af6a0571a299ed338a4339ddee1a835affc2131cc4141e0df30f6c",
+          "sha1": "5ab86ca9e041bcfe895f366db7176b65ad64eeef",
+          "md5": "3a800d079d48d94160d0b9786b7ce1e0"
+        }
+      ]
+    }
+  ]
+}

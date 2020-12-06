@@ -8,8 +8,6 @@ plugins {
 	id("java-library")
 }
 
-version = "0.3.2-patch-context"
-
 dependencies {
 	api("org.springframework.boot:spring-boot")
 	api("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
