@@ -3,13 +3,14 @@
   <groupId>org.springframework.fu</groupId>
   <artifactId>spring-fu-kofu</artifactId>
   <versioning>
-    <latest>0.5.0.1-patch-context</latest>
-    <release>0.5.0.1-patch-context</release>
+    <latest>0.5.0.2-patch-context</latest>
+    <release>0.5.0.2-patch-context</release>
     <versions>
       <version>0.3.2-patch-context</version>
       <version>0.5.0-patch-context</version>
       <version>0.5.0.1-patch-context</version>
+      <version>0.5.0.2-patch-context</version>
     </versions>
-    <lastUpdated>20210111053647</lastUpdated>
+    <lastUpdated>20210208070558</lastUpdated>
   </versioning>
 </metadata>

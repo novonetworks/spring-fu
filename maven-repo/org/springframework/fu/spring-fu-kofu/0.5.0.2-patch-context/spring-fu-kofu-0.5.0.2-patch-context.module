@@ -1,0 +1,243 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.springframework.fu",
+    "module": "spring-fu-kofu",
+    "version": "0.5.0.2-patch-context",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.8.1",
+      "buildId": "huqqm4i2o5dn3prq7xvpbquz4y"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot",
+          "version": {
+            "requires": "2.4.0"
+          },
+          "excludes": [
+            {
+              "group": "net.objecthunter",
+              "module": "exp4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "jcl-over-slf4j"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-log"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-manifests"
+            },
+            {
+              "group": "commons-logging",
+              "module": "commons-logging"
+            }
+          ]
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.10"
+          },
+          "excludes": [
+            {
+              "group": "net.objecthunter",
+              "module": "exp4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "jcl-over-slf4j"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-log"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-manifests"
+            },
+            {
+              "group": "commons-logging",
+              "module": "commons-logging"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-fu-kofu-0.5.0.2-patch-context.jar",
+          "url": "spring-fu-kofu-0.5.0.2-patch-context.jar",
+          "size": 214344,
+          "sha512": "6220c4ff968b40fde7ffc236a6ae1fec57745ce58890847faa26282b411f0bd67c3441f31274aa064b7dca8b59a0550aae5968cc4cc77e09d3260861a56f3eaf",
+          "sha256": "e0119f06accec91068a34032afbf7088cc438da2b1a313c09d2ae85026059a25",
+          "sha1": "8c6cf503b68843a1846ef4d71b9a1d11acb757ae",
+          "md5": "9ff156cab9b5db93d775670d401f9e8c"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.localToProject": "public",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.fu",
+          "module": "spring-fu-autoconfigure-adapter",
+          "version": {
+            "requires": "0.5.0.2-patch-context"
+          },
+          "excludes": [
+            {
+              "group": "net.objecthunter",
+              "module": "exp4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "jcl-over-slf4j"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-log"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-manifests"
+            },
+            {
+              "group": "commons-logging",
+              "module": "commons-logging"
+            }
+          ]
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-reflect",
+          "version": {
+            "requires": "1.4.10"
+          },
+          "excludes": [
+            {
+              "group": "net.objecthunter",
+              "module": "exp4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "jcl-over-slf4j"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-log"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-manifests"
+            },
+            {
+              "group": "commons-logging",
+              "module": "commons-logging"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot",
+          "version": {
+            "requires": "2.4.0"
+          },
+          "excludes": [
+            {
+              "group": "net.objecthunter",
+              "module": "exp4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "jcl-over-slf4j"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-log"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-manifests"
+            },
+            {
+              "group": "commons-logging",
+              "module": "commons-logging"
+            }
+          ]
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.4.10"
+          },
+          "excludes": [
+            {
+              "group": "net.objecthunter",
+              "module": "exp4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "jcl-over-slf4j"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-log"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-manifests"
+            },
+            {
+              "group": "commons-logging",
+              "module": "commons-logging"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-fu-kofu-0.5.0.2-patch-context.jar",
+          "url": "spring-fu-kofu-0.5.0.2-patch-context.jar",
+          "size": 214344,
+          "sha512": "6220c4ff968b40fde7ffc236a6ae1fec57745ce58890847faa26282b411f0bd67c3441f31274aa064b7dca8b59a0550aae5968cc4cc77e09d3260861a56f3eaf",
+          "sha256": "e0119f06accec91068a34032afbf7088cc438da2b1a313c09d2ae85026059a25",
+          "sha1": "8c6cf503b68843a1846ef4d71b9a1d11acb757ae",
+          "md5": "9ff156cab9b5db93d775670d401f9e8c"
+        }
+      ]
+    }
+  ]
+}
