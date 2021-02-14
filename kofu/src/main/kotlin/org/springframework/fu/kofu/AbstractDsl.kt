@@ -23,8 +23,6 @@ import org.springframework.core.env.Environment
 @DslMarker
 internal annotation class KofuMarker
 
-typealias ContextFactory = () -> GenericApplicationContext
-
 /**
  * Kofu DSL base class.
  *
@@ -35,15 +33,8 @@ typealias ContextFactory = () -> GenericApplicationContext
 @KofuMarker
 abstract class AbstractDsl {
 
-	lateinit var context: GenericApplicationContext
-
-
-	fun contextCustomizer(factory: () -> GenericApplicationContext) {
-		this.contextFactory = factory
-	}
-
-	internal var contextFactory: ContextFactory? = null
-
+	@PublishedApi
+	internal lateinit var context: GenericApplicationContext
 
 	/**
 	 * Shortcut the get the environment.

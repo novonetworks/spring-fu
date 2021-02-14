@@ -38,7 +38,7 @@ abstract class KofuApplication(private val initializer: AbstractDsl) {
 			}
 
 			override fun createApplicationContext(): ConfigurableApplicationContext {
-				return initializer.contextFactory?.invoke() ?: createContext()
+				return createContext()
 			}
 		}
 		if (profiles.isNotEmpty()) {

@@ -5,6 +5,12 @@ import org.springframework.boot.web.servlet.context.ServletWebServerApplicationC
 import org.springframework.context.ConfigurableApplicationContext
 import org.springframework.context.support.GenericApplicationContext
 
+
+typealias ContextFactory = () -> GenericApplicationContext
+
+
+internal var contextFactory: ContextFactory? = null
+
 /**
  * Declare a command-line [application][ApplicationDsl] (no server) that allows to configure a Spring Boot
  * application using Kofu DSL and functional bean registration.
@@ -16,11 +22,13 @@ import org.springframework.context.support.GenericApplicationContext
  * @see reactiveWebApplication
  * @author Sebastien Deleuze
  */
-fun application(dsl: ApplicationDsl.() -> Unit)
-		= object: KofuApplication(ApplicationDsl(dsl)) {
-	override fun createContext(): ConfigurableApplicationContext {
-		return GenericApplicationContext()
-	}
+fun application(
+    dsl: ApplicationDsl.() -> Unit,
+    contextFactory: (() -> GenericApplicationContext)? = null
+) = object : KofuApplication(ApplicationDsl(dsl)) {
+    override fun createContext(): ConfigurableApplicationContext {
+        return contextFactory?.invoke() ?: GenericApplicationContext()
+    }
 }
 
 /**
@@ -32,11 +40,13 @@ fun application(dsl: ApplicationDsl.() -> Unit)
  * @see ApplicationDsl
  * @author Sebastien Deleuze
  */
-fun webApplication(dsl: ApplicationDsl.() -> Unit)
-		= object: KofuApplication(ApplicationDsl(dsl)) {
-	override fun createContext(): ConfigurableApplicationContext {
-		return ServletWebServerApplicationContext()
-	}
+fun webApplication(
+    dsl: ApplicationDsl.() -> Unit,
+    contextFactory: (() -> GenericApplicationContext)? = null
+) = object : KofuApplication(ApplicationDsl(dsl)) {
+    override fun createContext(): ConfigurableApplicationContext {
+        return contextFactory?.invoke() ?: ServletWebServerApplicationContext()
+    }
 }
 
 /**
@@ -48,11 +58,13 @@ fun webApplication(dsl: ApplicationDsl.() -> Unit)
  * @see ApplicationDsl
  * @author Sebastien Deleuze
  */
-fun reactiveWebApplication(dsl: ApplicationDsl.() -> Unit)
-		= object: KofuApplication(ApplicationDsl(dsl)) {
-	override fun createContext(): ConfigurableApplicationContext {
-		return ReactiveWebServerApplicationContext()
-	}
+fun reactiveWebApplication(
+    dsl: ApplicationDsl.() -> Unit,
+    contextFactory: (() -> GenericApplicationContext)? = null
+) = object : KofuApplication(ApplicationDsl(dsl)) {
+    override fun createContext(): ConfigurableApplicationContext {
+        return contextFactory?.invoke() ?: ReactiveWebServerApplicationContext()
+    }
 }
 
 
@@ -61,5 +73,4 @@ fun reactiveWebApplication(dsl: ApplicationDsl.() -> Unit)
  * @see ConfigurationDsl.enable
  * @sample org.springframework.fu.kofu.samples.applicationDslWithConfiguration
  */
-fun configuration(dsl: ConfigurationDsl.() -> Unit)
-		= ConfigurationDsl(dsl)
+fun configuration(dsl: ConfigurationDsl.() -> Unit) = ConfigurationDsl(dsl)
