@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.springframework.fu</groupId>
+  <artifactId>spring-fu-samples-kofu-reactive-validation</artifactId>
+  <versioning>
+    <latest>0.5.0.4-patch-context</latest>
+    <release>0.5.0.4-patch-context</release>
+    <versions>
+      <version>0.5.0.4-patch-context</version>
+    </versions>
+    <lastUpdated>20210214060000</lastUpdated>
+  </versioning>
+</metadata>

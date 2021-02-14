@@ -35,7 +35,7 @@ open class ApplicationDsl internal constructor(private val dsl: ApplicationDsl.(
 
 	override fun initialize(context: GenericApplicationContext) {
 		super.initialize(context)
-		dsl()
+		dsl.invoke(this)
 		if (context.beanFactory.getBeanNamesForType<MessageSource>().isEmpty()) {
 			MessageSourceInitializer().initialize(context)
 		}
