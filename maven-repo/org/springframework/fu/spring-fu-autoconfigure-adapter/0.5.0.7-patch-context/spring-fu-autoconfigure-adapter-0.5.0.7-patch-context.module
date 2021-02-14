@@ -1,0 +1,181 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.springframework.fu",
+    "module": "spring-fu-autoconfigure-adapter",
+    "version": "0.5.0.7-patch-context",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.8.1",
+      "buildId": "7byrmvvmwje6vlbfih3xwhze4a"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot",
+          "version": {
+            "requires": "2.4.0"
+          },
+          "excludes": [
+            {
+              "group": "net.objecthunter",
+              "module": "exp4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "jcl-over-slf4j"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-log"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-manifests"
+            },
+            {
+              "group": "commons-logging",
+              "module": "commons-logging"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-autoconfigure",
+          "version": {
+            "requires": "2.4.0"
+          },
+          "excludes": [
+            {
+              "group": "net.objecthunter",
+              "module": "exp4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "jcl-over-slf4j"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-log"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-manifests"
+            },
+            {
+              "group": "commons-logging",
+              "module": "commons-logging"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-fu-autoconfigure-adapter-0.5.0.7-patch-context.jar",
+          "url": "spring-fu-autoconfigure-adapter-0.5.0.7-patch-context.jar",
+          "size": 120557,
+          "sha512": "011d1f815a76a48363ad0dcc7f42f4fd2c2527925bd1a6c62e6294d47427dbd9f716677467ae225b03c6e40414da76a532bc956ac0a581109899c143f56e505f",
+          "sha256": "09e921567102d0eef954c7dc65cb5bb060def6437819baa36228434ff0562fc2",
+          "sha1": "739ea936be4d0b049f1455da1168d633fc6a5101",
+          "md5": "1be05ac585ff63cbb487a76b38c0373f"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot",
+          "version": {
+            "requires": "2.4.0"
+          },
+          "excludes": [
+            {
+              "group": "net.objecthunter",
+              "module": "exp4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "jcl-over-slf4j"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-log"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-manifests"
+            },
+            {
+              "group": "commons-logging",
+              "module": "commons-logging"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-autoconfigure",
+          "version": {
+            "requires": "2.4.0"
+          },
+          "excludes": [
+            {
+              "group": "net.objecthunter",
+              "module": "exp4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "jcl-over-slf4j"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-log"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-manifests"
+            },
+            {
+              "group": "commons-logging",
+              "module": "commons-logging"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-fu-autoconfigure-adapter-0.5.0.7-patch-context.jar",
+          "url": "spring-fu-autoconfigure-adapter-0.5.0.7-patch-context.jar",
+          "size": 120557,
+          "sha512": "011d1f815a76a48363ad0dcc7f42f4fd2c2527925bd1a6c62e6294d47427dbd9f716677467ae225b03c6e40414da76a532bc956ac0a581109899c143f56e505f",
+          "sha256": "09e921567102d0eef954c7dc65cb5bb060def6437819baa36228434ff0562fc2",
+          "sha1": "739ea936be4d0b049f1455da1168d633fc6a5101",
+          "md5": "1be05ac585ff63cbb487a76b38c0373f"
+        }
+      ]
+    }
+  ]
+}

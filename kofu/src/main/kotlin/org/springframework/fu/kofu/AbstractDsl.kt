@@ -33,34 +33,33 @@ internal annotation class KofuMarker
 @KofuMarker
 abstract class AbstractDsl {
 
-	@PublishedApi
-	internal lateinit var context: GenericApplicationContext
+    lateinit var context: GenericApplicationContext
 
-	/**
-	 * Shortcut the get the environment.
-	 */
-	val env: Environment
-		get() = context.environment
+    /**
+     * Shortcut the get the environment.
+     */
+    val env: Environment
+        get() = context.environment
 
-	/**
-	 * Shortcut the get the active profiles.
-	 */
-	val profiles: Array<String>
-		get() = env.activeProfiles
+    /**
+     * Shortcut the get the active profiles.
+     */
+    val profiles: Array<String>
+        get() = env.activeProfiles
 
-	/**
-	 * Take in account functional properties enclosed in the provided lambda only when the
-	 * specified profile is active.
-	 */
-	fun profile(profile: String, block: () -> Unit) {
-		if (env.activeProfiles.contains(profile)) {
-			block()
-		}
-	}
+    /**
+     * Take in account functional properties enclosed in the provided lambda only when the
+     * specified profile is active.
+     */
+    fun profile(profile: String, block: () -> Unit) {
+        if (env.activeProfiles.contains(profile)) {
+            block()
+        }
+    }
 
-	open fun initialize(context: GenericApplicationContext) {
-		this.context = context
-	}
+    open fun initialize(context: GenericApplicationContext) {
+        this.context = context
+    }
 
-	internal fun toInitializer() = ApplicationContextInitializer<GenericApplicationContext> { initialize(it) }
+    internal fun toInitializer() = ApplicationContextInitializer<GenericApplicationContext> { initialize(it) }
 }

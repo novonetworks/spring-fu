@@ -1,0 +1,152 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "org.springframework.fu",
+    "module": "spring-fu-jafu",
+    "version": "0.5.0.7-patch-context",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "6.8.1",
+      "buildId": "7byrmvvmwje6vlbfih3xwhze4a"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot",
+          "version": {
+            "requires": "2.4.0"
+          },
+          "excludes": [
+            {
+              "group": "net.objecthunter",
+              "module": "exp4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "jcl-over-slf4j"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-log"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-manifests"
+            },
+            {
+              "group": "commons-logging",
+              "module": "commons-logging"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-fu-jafu-0.5.0.7-patch-context.jar",
+          "url": "spring-fu-jafu-0.5.0.7-patch-context.jar",
+          "size": 63948,
+          "sha512": "8d168ad5730cf8d0607d14135340aabff565d45debdb9229af06f6679696a1455c400dd5dfce0d42f35121c98338abcb3104f9094fd06d8c403e27fdbb74e88c",
+          "sha256": "8e5659fca7f74b694bd2aa8c68a15f5f2deb5a4a1e6034ecdece4911cd6d1d2d",
+          "sha1": "69bf057dc5155fc14b2a9295474cc296993a8847",
+          "md5": "78f0ad3269e20dd742e06ac6bbc3cfae"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.fu",
+          "module": "spring-fu-autoconfigure-adapter",
+          "version": {
+            "requires": "0.5.0.7-patch-context"
+          },
+          "excludes": [
+            {
+              "group": "net.objecthunter",
+              "module": "exp4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "jcl-over-slf4j"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-log"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-manifests"
+            },
+            {
+              "group": "commons-logging",
+              "module": "commons-logging"
+            }
+          ]
+        },
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot",
+          "version": {
+            "requires": "2.4.0"
+          },
+          "excludes": [
+            {
+              "group": "net.objecthunter",
+              "module": "exp4j"
+            },
+            {
+              "group": "org.slf4j",
+              "module": "jcl-over-slf4j"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-log"
+            },
+            {
+              "group": "com.jcabi",
+              "module": "jcabi-manifests"
+            },
+            {
+              "group": "commons-logging",
+              "module": "commons-logging"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "spring-fu-jafu-0.5.0.7-patch-context.jar",
+          "url": "spring-fu-jafu-0.5.0.7-patch-context.jar",
+          "size": 63948,
+          "sha512": "8d168ad5730cf8d0607d14135340aabff565d45debdb9229af06f6679696a1455c400dd5dfce0d42f35121c98338abcb3104f9094fd06d8c403e27fdbb74e88c",
+          "sha256": "8e5659fca7f74b694bd2aa8c68a15f5f2deb5a4a1e6034ecdece4911cd6d1d2d",
+          "sha1": "69bf057dc5155fc14b2a9295474cc296993a8847",
+          "md5": "78f0ad3269e20dd742e06ac6bbc3cfae"
+        }
+      ]
+    }
+  ]
+}
